@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactDetailFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_more"
+            android:layout_marginStart="@dimen/margin_start_end"
+            android:layout_marginEnd="@dimen/margin_start_end"
+            app:cardUseCompatPadding="true"
+            android:background="?attr/cardBackgroundColor">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/cardBackgroundColor">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/contact_profile_image_view"
+                    android:layout_width="@dimen/profile_image_view_size"
+                    android:layout_height="@dimen/profile_image_view_size"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_top_double_more"
+                    android:layout_marginBottom="@dimen/margin_bottom_double_more"
+                    android:contentDescription="@string/contact_add_edit_profile_image_description"
+                    android:src="@drawable/default_profile_1" />
+
+                <TextView
+                    android:id="@+id/name_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:textColor="?attr/textColor"
+                    android:textSize="@dimen/label_text_size"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:layout_below="@id/contact_profile_image_view"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginStart="@dimen/margin_start_end"
+            android:layout_marginEnd="@dimen/margin_start_end"
+            app:cardUseCompatPadding="true"
+            android:background="?attr/cardBackgroundColor">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/cardBackgroundColor">
+
+            <!-- Email Elements Here-->
+
+                <RelativeLayout
+                    android:id="@+id/email_relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/email_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/textColor"
+                        android:textSize="@dimen/label_text_size"
+                        android:layout_marginTop="@dimen/margin_top_more"
+                        android:layout_marginStart="@dimen/margin_start_end"
+                        android:drawableStart="@drawable/ic_email_small"
+                        android:drawablePadding="@dimen/margin_start_end"
+                        android:text="@string/contact_add_edit_email_text_view" />
+
+                    <LinearLayout
+                        android:id="@+id/email_linear_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/email_text_view">
+
+                        <TextView
+                            android:id="@+id/email_text_text_view"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="?attr/textColor"
+                            android:textSize="@dimen/label_text_size_large"
+                            android:layout_marginStart="@dimen/margin_start_end"
+                            android:layout_marginEnd="@dimen/margin_start_end"
+                            android:layout_marginTop="@dimen/margin_top"
+                            android:layout_marginBottom="@dimen/margin_bottom"
+                            android:layout_weight="10"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:text=""/>
+
+                        <ImageButton
+                            android:id="@+id/email_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="@dimen/margin_start_end"
+                            android:src="@drawable/ic_email"
+                            android:contentDescription="@string/contact_details_email_icon_content_description"
+                            android:background="@drawable/custom_button_email"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            <!-- Phone Elements Here -->
+
+                <RelativeLayout
+                    android:id="@+id/phone_relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/email_relative_layout"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/phone_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start_end"
+                        android:layout_marginEnd="@dimen/margin_start_end"
+                        android:layout_marginTop="@dimen/margin_top_double_more"
+                        android:layout_marginBottom="@dimen/margin_bottom"
+                        android:drawableStart="@drawable/ic_phone_small"
+                        android:drawablePadding="@dimen/margin_start_end"
+                        android:text="@string/contact_add_edit_phone_text_view"
+                        android:textSize="@dimen/label_text_size"
+                        android:textColor="?attr/textColor" />
+
+                    <LinearLayout
+                        android:id="@+id/home_phone_linear_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="@dimen/margin_bottom"
+                        android:layout_below="@id/phone_text_view"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/home_phone_text_view"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_start_end"
+                            android:layout_marginEnd="@dimen/margin_start_end"
+                            android:layout_marginTop="@dimen/margin_top"
+                            android:layout_marginBottom="@dimen/margin_bottom"
+                            android:drawableStart="@drawable/ic_home"
+                            android:drawablePadding="@dimen/margin_start_end"
+                            android:textSize="@dimen/label_text_size_large"
+                            android:textColor="?attr/textColor"
+                            android:text=""
+                            android:layout_weight="6"/>
+
+                        <ImageButton
+                            android:id="@+id/call_home_phone_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="@dimen/margin_start_end"
+                            android:src="@drawable/ic_phone"
+                            android:contentDescription="@string/contact_details_call_icon_content_description"
+                            android:background="@drawable/custom_button_call"/>
+
+                        <ImageButton
+                            android:id="@+id/text_home_phone_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="@dimen/margin_start_end"
+                            android:src="@drawable/ic_sms"
+                            android:contentDescription="@string/contact_details_text_icon_content_description"
+                            android:background="@drawable/custom_button_text"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cell_phone_linear_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="@dimen/margin_bottom"
+                        android:layout_below="@id/home_phone_linear_layout"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/cell_phone_text_view"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_start_end"
+                            android:layout_marginEnd="@dimen/margin_start_end"
+                            android:layout_marginBottom="@dimen/margin_bottom"
+                            android:layout_marginTop="@dimen/margin_top"
+                            android:drawableStart="@drawable/ic_smartphone"
+                            android:drawablePadding="@dimen/margin_start_end"
+                            android:textSize="@dimen/label_text_size_large"
+                            android:textColor="?attr/textColor"
+                            android:text=""
+                            android:layout_weight="6"/>
+
+                        <ImageButton
+                            android:id="@+id/call_cell_phone_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="@dimen/margin_start_end"
+                            android:src="@drawable/ic_phone"
+                            android:contentDescription="@string/contact_details_call_icon_content_description"
+                            android:background="@drawable/custom_button_call"/>
+
+                        <ImageButton
+                            android:id="@+id/text_cell_phone_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="@dimen/margin_start_end"
+                            android:src="@drawable/ic_sms"
+                            android:contentDescription="@string/contact_details_text_icon_content_description"
+                            android:background="@drawable/custom_button_text"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/work_phone_linear_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="@dimen/margin_bottom"
+                        android:layout_below="@id/cell_phone_linear_layout"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/work_phone_text_view"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_start_end"
+                            android:layout_marginEnd="@dimen/margin_start_end"
+                            android:layout_marginBottom="@dimen/margin_bottom"
+                            android:layout_marginTop="@dimen/margin_top"
+                            android:drawableStart="@drawable/ic_work"
+                            android:drawablePadding="@dimen/margin_start_end"
+                            android:textSize="@dimen/label_text_size_large"
+                            android:textColor="?attr/textColor"
+                            android:text=""
+                            android:layout_weight="6" />
+
+                        <ImageButton
+                            android:id="@+id/call_work_phone_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="@dimen/margin_start_end"
+                            android:src="@drawable/ic_phone"
+                            android:contentDescription="@string/contact_details_call_icon_content_description"
+                            android:background="@drawable/custom_button_call"/>
+
+                        <ImageButton
+                            android:id="@+id/text_work_phone_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="@dimen/margin_start_end"
+                            android:src="@drawable/ic_sms"
+                            android:contentDescription="@string/contact_details_text_icon_content_description"
+                            android:background="@drawable/custom_button_text"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            <!-- Address Elements Here -->
+
+                <RelativeLayout
+                    android:id="@+id/address_relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/phone_relative_layout"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/address_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start_end"
+                        android:layout_marginEnd="@dimen/margin_start_end"
+                        android:layout_marginTop="@dimen/margin_top_double_more"
+                        android:drawableStart="@drawable/ic_location_city_small"
+                        android:drawablePadding="@dimen/margin_start_end"
+                        android:text="@string/contact_add_edit_address_text_view"
+                        android:textSize="@dimen/label_text_size"
+                        android:textColor="?attr/textColor" />
+
+                    <TextView
+                        android:id="@+id/address_text_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start_end"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:layout_marginBottom="@dimen/margin_bottom"
+                        android:text=""
+                        android:textSize="@dimen/label_text_size_large"
+                        android:textColor="?attr/textColor"
+                        android:textStyle="italic"
+                        android:layout_below="@id/address_text_view"
+                        android:ellipsize="end"
+                        android:maxLines="3"/>
+                </RelativeLayout>
+
+
+             <!-- Birthday Elements Here -->
+
+                <RelativeLayout
+                    android:id="@+id/birthday_relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/address_relative_layout"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/birthday_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start_end"
+                        android:layout_marginEnd="@dimen/margin_start_end"
+                        android:layout_marginTop="@dimen/margin_top_double_more"
+                        android:drawableStart="@drawable/ic_cake_small"
+                        android:drawablePadding="@dimen/margin_start_end"
+                        android:text="@string/contact_add_edit_birthday_text_view"
+                        android:textSize="@dimen/label_text_size"
+                        android:textColor="?attr/textColor" />
+
+                    <TextView
+                        android:id="@+id/birthday_text_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start_end"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:layout_marginBottom="@dimen/margin_bottom"
+                        android:text=""
+                        android:textSize="@dimen/label_text_size_large"
+                        android:textColor="?attr/textColor"
+                        android:layout_below="@id/birthday_text_view" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

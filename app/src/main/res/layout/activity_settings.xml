@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/settings_theme_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingBottom="@dimen/margin_bottom"
+        android:paddingStart="@dimen/margin_start_end"
+        android:paddingEnd="0dp">
+
+        <LinearLayout
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <TextView
+                    android:id="@+id/settings_theme_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_more"
+                    android:layout_marginStart="@dimen/margin_start_end"
+                    android:textSize="@dimen/label_text_size_large"
+                    android:textColor="?attr/textColor"
+                    android:text="@string/settings_theme"/>
+
+                <TextView
+                    android:id="@+id/settings_theme_description_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:layout_marginStart="@dimen/margin_start_end"
+                    android:layout_below="@id/settings_theme_text_view"
+                    android:textColor="?attr/subTextColor"
+                    android:text="@string/settings_theme_description"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/settings_theme_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginStart="24dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/settings_birthday_notification_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingStart="@dimen/margin_start_end"
+        android:paddingEnd="0dp">
+
+        <LinearLayout
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <TextView
+                    android:id="@+id/settings_birthday_notification_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_more"
+                    android:layout_marginStart="@dimen/margin_start_end"
+                    android:textSize="@dimen/label_text_size_large"
+                    android:textColor="?attr/textColor"
+                    android:text="@string/settings_notifications"/>
+
+                <TextView
+                    android:id="@+id/settings_birthday_notification_description_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:layout_marginStart="@dimen/margin_start_end"
+                    android:layout_below="@id/settings_birthday_notification_text_view"
+                    android:textColor="?attr/subTextColor"
+                    android:text="@string/settings_notifications_description"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/settings_notification_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginStart="24dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_delete_all_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingStart="@dimen/margin_start_end"
+        android:paddingEnd="0dp"
+        android:background="?android:attr/selectableItemBackground">
+
+
+        <TextView
+            android:id="@+id/settings_delete_all_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_more"
+            android:layout_marginStart="@dimen/margin_start_end"
+            android:textSize="@dimen/label_text_size_large"
+            android:textColor="@color/text_danger"
+            android:text="@string/settings_delete_all"/>
+
+        <TextView
+            android:id="@+id/settings_delete_all_description_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginStart="@dimen/margin_start_end"
+            android:layout_below="@id/settings_delete_all_text_view"
+            android:textColor="@color/text_danger_description"
+            android:text="@string/settings_delete_all_description"/>
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

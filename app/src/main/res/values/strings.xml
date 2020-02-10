@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Contact Manager</string>
+    <string name="title_activity_contact">ContactActivity</string>
+    <string name="contact_add_edit_name_text_view">Name:</string>
+    <string name="contact_add_edit_email_text_view">Email:</string>
+    <string name="contact_add_edit_phone_text_view">Phone:</string>
+    <string name="contact_add_edit_address_text_view">Address:</string>
+    <string name="contact_add_edit_birthday_text_view">Birthday:</string>
+    <string name="contact_add_edit_birthday_button">Pick a Date</string>
+    <string name="contact_add_edit_birthday_clear_button">Clear</string>
+    <string name="contact_add_edit_first_name_hint">first name&#8230;</string>
+    <string name="contact_add_edit_last_name_hint">last name&#8230;</string>
+    <string name="contact_add_edit_email_hint">example@email.com</string>
+    <string name="contact_add_edit_home_phone_hint">Home</string>
+    <string name="contact_add_edit_cell_phone_hint">Cell</string>
+    <string name="contact_add_edit_work_phone_hint">Work</string>
+    <string name="contact_add_edit_birthday_default">No Birthday Set</string>
+    <string name="contact_add_edit_address_hint">1111 Example Street&#8230;</string>
+    <string name="contact_add_edit_save_button">Save Contact</string>
+    <string name="contact_add_edit_profile_image_description">Profile picture for your contact</string>
+    <string name="contact_details_call_icon_content_description">Call</string>
+    <string name="contact_details_text_icon_content_description">Text</string>
+    <string name="contact_details_email_icon_content_description">Email</string>
+    <string name="contact_add_edit_name_icon_content_description">Person Icon</string>
+    <string name="contact_add_edit_email_icon_content_description">Email Icon</string>
+    <string name="contact_add_edit_phone_icon_content_description">Phone Icon</string>
+    <string name="menu_title_settings">Settings</string>
+    <string name="menu_title_search">Search</string>
+    <string name="menu_title_save">Save</string>
+    <string name="menu_title_delete">Delete</string>
+    <string name="menu_title_edit">Edit</string>
+    <string name="dialog_camera">Camera</string>
+    <string name="dialog_gallery">Gallery</string>
+    <string name="dialog_back_title">Discard Changes?</string>
+    <string name="dialog_image_title">Select Image How?</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_discard">Discard</string>
+    <string name="dialog_back_body">Are you sure you want to discard changes?</string>
+    <string name="settings_delete_all">Delete All Contacts</string>
+    <string name="settings_notifications">Birthday Notifications</string>
+    <string name="settings_delete_all_description">This will delete all of your contacts stored on this app</string>
+    <string name="settings_notifications_description">Get notified when your contacts have a birthday</string>
+    <string name="settings_delete_all_alert_title">Delete All Contacts?</string>
+    <string name="settings_delete_all_alert_body">Are you sure you want to delete all contacts on this app?
+        This action can\'t be undone</string>
+    <string name="settings_theme">Dark Theme</string>
+    <string name="settings_theme_description">Changes the colors to a nice night theme</string>
+    <string name="alert_delete">DELETE</string>
+    <string name="alert_cancel">CANCEL</string>
+
+    <string name="toast_no_camera">No camera was found on this device</string>
+    <string name="toast_camera_cancelled">No picture taken</string>
+    <string name="toast_gallery_cancelled">No picture was selected</string>
+    <string name="toast_all_contacts_deleted">All in-app contacts were deleted</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="notification_title_single">It\'s someone\'s birthday today!</string>
+    <string name="notification_title_multi">Your contacts have birthdays today!</string>
+
+    <string name="swipe_right_label">Call</string>
+    <string name="swipe_left_label">Text</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>

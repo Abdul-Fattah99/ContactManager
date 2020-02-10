@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_theme_text">#000000</color>
+    <color name="light_theme_sub_text">#AAAAAA</color>
+    <color name="light_theme_hint_text">#9A9A9A</color>
+    <color name="light_theme_color_primary">#D5924D</color>
+    <color name="light_theme_color_primary_dark">#AC763F</color>
+    <color name="light_theme_color_accent">#FF8300</color>
+    <color name="light_theme_background_color">#FEFEFE</color>
+    <color name="light_theme_card_background_color">#FFFFFF</color>
+    <color name="light_theme_navbar">#CCCCCC</color>
+    <color name="light_theme_ic_small">#000000</color>
+
+    <color name="dark_theme_text">#FFFFFF</color>
+    <color name="dark_theme_sub_text">#CCCCCC</color>
+    <color name="dark_theme_hint_text">#BBBBBB</color>
+    <color name="dark_theme_color_primary">#333333</color>
+    <color name="dark_theme_color_primary_dark">#131313</color>
+    <color name="dark_theme_color_accent">#F27C00</color>
+    <color name="dark_theme_background_color">#232323</color>
+    <color name="dark_theme_card_background_color">#333333</color>
+    <color name="dark_theme_navbar">#000000</color>
+    <color name="dark_theme_ic_small">#FFFFFF</color>
+
+    <color name="call_button">#3fad37</color>
+    <color name="call_swipe">#3fad37</color>
+    <color name="call_button_pressed">#318a2b</color>
+    <color name="text_button">#1baad1</color>
+    <color name="text_swipe">#1baad1</color>
+    <color name="text_button_pressed">#178dad</color>
+    <color name="email_button">#bdbdbd</color>
+    <color name="email_button_pressed">#999999</color>
+    <color name="profile_cover">#55000000</color>
+    <color name="profile_cover_pressed">#AA000000</color>
+    <color name="text_danger">#ff2a00</color>
+    <color name="text_danger_description">#e32500</color>
+</resources>

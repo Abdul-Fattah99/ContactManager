@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/profile_cover_pressed" />
+    <item
+        android:gravity="center"
+        android:height="48dp"
+        android:width="48dp"
+        android:drawable="@drawable/ic_edit_small_dark" />
+</layer-list>

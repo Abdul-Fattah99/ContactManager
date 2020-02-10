@@ -1,0 +1,17 @@
+<resources>
+    <dimen name="margin_top">4dp</dimen>
+    <dimen name="button_border">4dp</dimen>
+    <dimen name="contact_item_padding">8dp</dimen>
+    <dimen name="card_view_padding">8dp</dimen>
+    <dimen name="margin_start_end">8dp</dimen>
+    <dimen name="margin_bottom">8dp</dimen>
+    <dimen name="margin_top_more">8dp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="margin_top_double_more">16dp</dimen>
+    <dimen name="margin_bottom_double_more">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="label_text_size">18sp</dimen>
+    <dimen name="label_text_size_large">22sp</dimen>
+    <dimen name="text_margin">32dp</dimen>
+    <dimen name="profile_image_view_size">96dp</dimen>
+</resources>
