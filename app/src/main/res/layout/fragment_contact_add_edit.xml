@@ -260,15 +260,6 @@
                         android:layout_marginTop="@dimen/margin_top"
                         android:layout_weight="6"
                         android:text="@string/contact_add_edit_birthday_button" />
-                    <Button
-                        android:id="@+id/birthday_date_clear_button"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/margin_start_end"
-                        android:layout_marginEnd="@dimen/margin_start_end"
-                        android:layout_marginTop="@dimen/margin_top"
-                        android:text="@string/contact_add_edit_birthday_clear_button"
-                        android:layout_weight="4" />
 
                 </LinearLayout>
 
